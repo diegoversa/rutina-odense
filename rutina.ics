@@ -23,83 +23,6 @@ RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:cena-lun@rutina-odense
-DTSTAMP:20261005T111700Z
-DTSTART;TZID=Europe/Copenhagen:20261005T193000
-DTEND;TZID=Europe/Copenhagen:20261005T201500
-RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20270131T225959Z
-SUMMARY:Cena: salmón + arroz + brócoli
-DESCRIPTION:Salmón en sartén u horno 15 min con arroz y brócoli (vapor o salteado). Descongela el salmón en la nevera desde la noche anterior (nunca a temperatura ambiente). Postre: yogur con fresas (o plátano).
-END:VEVENT
-BEGIN:VEVENT
-UID:cena-mar@rutina-odense
-DTSTAMP:20261005T111700Z
-DTSTART;TZID=Europe/Copenhagen:20261006T193000
-DTEND;TZID=Europe/Copenhagen:20261006T201500
-RRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL=20270131T225959Z
-SUMMARY:Cena rápida: pasta con chorizo + champiñones
-DESCRIPTION:Día largo (clase hasta las 18:00). Pasta con chorizo para calentar y saltea unos champiñones o brócoli aparte: 5 minutos. Postre: yogur con fresas (o plátano).
-END:VEVENT
-BEGIN:VEVENT
-UID:cena-mie@rutina-odense
-DTSTAMP:20261005T111700Z
-DTSTART;TZID=Europe/Copenhagen:20261007T193000
-DTEND;TZID=Europe/Copenhagen:20261007T201500
-RRULE:FREQ=WEEKLY;BYDAY=WE;UNTIL=20270131T225959Z
-SUMMARY:Cena: pollo con champiñones + puré
-DESCRIPTION:Pollo a la plancha (descongelado en la nevera) con champiñones salteados y puré. Postre: yogur con fresas (o plátano).
-END:VEVENT
-BEGIN:VEVENT
-UID:cena-jue@rutina-odense
-DTSTAMP:20261005T111700Z
-DTSTART;TZID=Europe/Copenhagen:20261008T193000
-DTEND;TZID=Europe/Copenhagen:20261008T201500
-RRULE:FREQ=WEEKLY;BYDAY=TH;UNTIL=20270131T225959Z
-SUMMARY:Cena 10 min: tortilla de champiñones + pan + pavo
-DESCRIPTION:Cena rápida. Tortilla de champiñones con pan y pavo en lonchas. Si falta algo para el fin de semana apúntalo en la lista de la compra. Postre: yogur con fresas (o plátano).
-END:VEVENT
-BEGIN:VEVENT
-UID:cena-vie@rutina-odense
-DTSTAMP:20261005T111700Z
-DTSTART;TZID=Europe/Copenhagen:20261009T193000
-DTEND;TZID=Europe/Copenhagen:20261009T201500
-RRULE:FREQ=WEEKLY;BYDAY=FR;UNTIL=20270131T225959Z
-SUMMARY:Cena libre: sobras o salir
-DESCRIPTION:Termina lo que quede en la nevera antes de la compra del sábado o sal a cenar. Postre: yogur con fresas (o plátano).
-END:VEVENT
-BEGIN:VEVENT
-UID:cena-sab@rutina-odense
-DTSTAMP:20261005T111700Z
-DTSTART;TZID=Europe/Copenhagen:20261010T193000
-DTEND;TZID=Europe/Copenhagen:20261010T203000
-RRULE:FREQ=WEEKLY;BYDAY=SA;UNTIL=20270131T225959Z
-SUMMARY:Cena con calma: receta nueva o favorita
-DESCRIPTION:Día para cocinar sin prisa. Antes de acostarte saca del congelador la proteína del batch de mañana y ponla en la nevera. Postre: yogur con fresas (o plátano).
-END:VEVENT
-BEGIN:VEVENT
-UID:cena-dom@rutina-odense
-DTSTAMP:20261005T111700Z
-DTSTART;TZID=Europe/Copenhagen:20261011T193000
-DTEND;TZID=Europe/Copenhagen:20261011T201500
-RRULE:FREQ=WEEKLY;BYDAY=SU;UNTIL=20270131T225959Z
-SUMMARY:Cena: del batch cooking
-DESCRIPTION:Cena con lo que cocinaste esta tarde. Aparta ya los tuppers de martes a jueves. Postre: yogur con fresas (o plátano).
-END:VEVENT
-BEGIN:VEVENT
-UID:batch-dom@rutina-odense
-DTSTAMP:20261005T111700Z
-DTSTART;TZID=Europe/Copenhagen:20261011T170000
-DTEND;TZID=Europe/Copenhagen:20261011T183000
-RRULE:FREQ=WEEKLY;BYDAY=SU;UNTIL=20270131T225959Z
-SUMMARY:Batch cooking: tuppers de martes a jueves
-DESCRIPTION:Cocina: 1) arroz para 3-4 raciones. 2) Proteína para 3 tuppers: salmón para el martes y pollo para miércoles y jueves (el pescado cocinado dura 2 días en nevera, el pollo 3-4). 3) Brócoli y champiñones salteados o al horno. El lunes comes en la universidad: no hace falta tupper. Etiqueta con la fecha.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Batch cooking en 30 min
-TRIGGER:-PT30M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:plan-dom@rutina-odense
 DTSTAMP:20261005T111700Z
 DTSTART;TZID=Europe/Copenhagen:20261011T203000
@@ -111,20 +34,6 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Revisión semanal
 TRIGGER:PT0S
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:compra-sab@rutina-odense
-DTSTAMP:20261005T111700Z
-DTSTART;TZID=Europe/Copenhagen:20261010T113000
-DTEND;TZID=Europe/Copenhagen:20261010T123000
-RRULE:FREQ=WEEKLY;BYDAY=SA;UNTIL=20270131T225959Z
-SUMMARY:Compra (Lidl / Netto)
-DESCRIPTION:Mira antes nevera y congelador y haz la lista en el móvil. Fijos: plátanos + fresas + yogur + zumo + huevos + brócoli + champiñones. Lo que suele faltar: proteína (pollo/pescado/pavo) + legumbres + algo de variedad de verdura. Bilka solo para compra grande ocasional.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Compra en 30 min
-TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -165,17 +74,311 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:dormir@rutina-odense
-DTSTAMP:20261005T111700Z
-DTSTART;TZID=Europe/Copenhagen:20261005T231500
-DTEND;TZID=Europe/Copenhagen:20261005T234500
-RRULE:FREQ=DAILY;UNTIL=20270131T225959Z
-SUMMARY:Cerrar el día
-DESCRIPTION:Pantallas fuera y a la cama. Durmiendo a las 00:00 y despertando a las 06:30 son 6,5 h: en las noches previas a una clase de las 08:00 (domingo, lunes, miércoles) intenta acostarte a las 23:00.
+UID:comida-A-0@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261005T140000
+DTEND;TZID=Europe/Copenhagen:20261005T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20270131T225959Z
+SUMMARY:Comida en la uni
+DESCRIPTION:Los lunes comes en la universidad. Opción barata: sándwich de pavo + plátano. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-A-0@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261005T193000
+DTEND;TZID=Europe/Copenhagen:20261005T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20270131T225959Z
+SUMMARY:Cena: salmón + arroz + brócoli
+DESCRIPTION:Salmón en sartén u horno 15 min con arroz y brócoli. Descongela el salmón en la nevera desde la noche anterior. Postre: yogur con fresas.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-A-1@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261006T140000
+DTEND;TZID=Europe/Copenhagen:20261006T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU;UNTIL=20270131T225959Z
+SUMMARY:Comida (tupper): arroz + salmón + brócoli
+DESCRIPTION:Tupper del batch del domingo. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-A-1@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261006T193000
+DTEND;TZID=Europe/Copenhagen:20261006T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU;UNTIL=20270131T225959Z
+SUMMARY:Cena rápida: pasta con chorizo + champiñones
+DESCRIPTION:Día largo. Pasta con chorizo para calentar y champiñones salteados aparte (5 min). Postre: yogur con fresas.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-A-2@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261007T140000
+DTEND;TZID=Europe/Copenhagen:20261007T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=WE;UNTIL=20270131T225959Z
+SUMMARY:Comida (tupper): arroz + pollo + verdura
+DESCRIPTION:Tupper del batch del domingo. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-A-2@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261007T193000
+DTEND;TZID=Europe/Copenhagen:20261007T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=WE;UNTIL=20270131T225959Z
+SUMMARY:Cena: tortilla de champiñones + pan + pavo
+DESCRIPTION:Cena de 10 minutos con huevos del frigorífico. Postre: yogur con fresas.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-A-3@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261008T140000
+DTEND;TZID=Europe/Copenhagen:20261008T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH;UNTIL=20270131T225959Z
+SUMMARY:Comida (tupper): pollo + patata + verdura
+DESCRIPTION:Tupper del batch del domingo. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-A-3@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261008T193000
+DTEND;TZID=Europe/Copenhagen:20261008T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH;UNTIL=20270131T225959Z
+SUMMARY:Cena: lentejas con verdura + huevo
+DESCRIPTION:Lentejas de bote con zanahoria o pimiento salteado y un huevo. Legumbre: proteína y fibra. Postre: yogur con fresas.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-A-4@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261009T140000
+DTEND;TZID=Europe/Copenhagen:20261009T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=FR;UNTIL=20270131T225959Z
+SUMMARY:Comida: pasta con atún y tomate
+DESCRIPTION:Pasta con atún en lata y tomate triturado. Rápida y con proteína. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-A-4@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261009T193000
+DTEND;TZID=Europe/Copenhagen:20261009T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=FR;UNTIL=20270131T225959Z
+SUMMARY:Cena libre: sobras o salir
+DESCRIPTION:Termina lo que quede en la nevera antes de la compra o sal a cenar.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-A-5@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261010T140000
+DTEND;TZID=Europe/Copenhagen:20261010T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SA;UNTIL=20270131T225959Z
+SUMMARY:Comida: hamburguesas de ternera + patatas al horno + ensalada
+DESCRIPTION:Ternera picada formada a mano con sal y pimienta. Patatas al horno 35 min. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-A-5@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261010T193000
+DTEND;TZID=Europe/Copenhagen:20261010T203000
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SA;UNTIL=20270131T225959Z
+SUMMARY:Cena con calma: receta nueva o favorita
+DESCRIPTION:Día para cocinar sin prisa. Antes de acostarte saca del congelador la proteína del batch de mañana.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-A-6@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261011T140000
+DTEND;TZID=Europe/Copenhagen:20261011T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SU;UNTIL=20270131T225959Z
+SUMMARY:Comida: arroz con pollo y verduras
+DESCRIPTION:Todo en una sartén o cazuela. Cocina de más para la cena. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-A-6@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261011T193000
+DTEND;TZID=Europe/Copenhagen:20261011T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SU;UNTIL=20270131T225959Z
+SUMMARY:Cena ligera: huevos o sobras
+DESCRIPTION:Tras el batch cooking: algo ligero con huevos o sobras de la comida. Postre: yogur con fresas.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-B-0@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261012T140000
+DTEND;TZID=Europe/Copenhagen:20261012T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20270131T225959Z
+SUMMARY:Comida en la uni
+DESCRIPTION:Los lunes comes en la universidad. Opción barata: sándwich de pavo + plátano. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-B-0@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261012T193000
+DTEND;TZID=Europe/Copenhagen:20261012T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20270131T225959Z
+SUMMARY:Cena: pollo al horno + patatas + brócoli
+DESCRIPTION:Pollo (muslos o pechuga) con patatas al horno 40 min y brócoli al vapor. Postre: yogur con fresas.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-B-1@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261013T140000
+DTEND;TZID=Europe/Copenhagen:20261013T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU;UNTIL=20270131T225959Z
+SUMMARY:Comida (tupper): arroz + pollo + brócoli
+DESCRIPTION:Tupper del batch del domingo. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-B-1@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261013T193000
+DTEND;TZID=Europe/Copenhagen:20261013T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU;UNTIL=20270131T225959Z
+SUMMARY:Cena: revuelto de champiñones y huevos + pan + pavo
+DESCRIPTION:Cena de 10 minutos. Postre: yogur con fresas.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-B-2@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261014T140000
+DTEND;TZID=Europe/Copenhagen:20261014T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=WE;UNTIL=20270131T225959Z
+SUMMARY:Comida (tupper): pasta + atún + tomate
+DESCRIPTION:Tupper del batch del domingo. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-B-2@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261014T193000
+DTEND;TZID=Europe/Copenhagen:20261014T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=WE;UNTIL=20270131T225959Z
+SUMMARY:Cena: salmón + puré + ensalada
+DESCRIPTION:Salmón en sartén con puré y ensalada. Descongela en la nevera desde la noche anterior. Postre: yogur con fresas.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-B-3@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261015T140000
+DTEND;TZID=Europe/Copenhagen:20261015T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH;UNTIL=20270131T225959Z
+SUMMARY:Comida (tupper): garbanzos con espinacas y huevo
+DESCRIPTION:Tupper del batch del domingo. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-B-3@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261015T193000
+DTEND;TZID=Europe/Copenhagen:20261015T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH;UNTIL=20270131T225959Z
+SUMMARY:Cena rápida: pasta con chorizo + brócoli
+DESCRIPTION:Pasta con chorizo para calentar y brócoli salteado aparte. Postre: yogur con fresas.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-B-4@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261016T140000
+DTEND;TZID=Europe/Copenhagen:20261016T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=FR;UNTIL=20270131T225959Z
+SUMMARY:Comida: wok de pollo con verduras y arroz
+DESCRIPTION:Pollo en tiras con zanahoria pimiento y brócoli. Un chorrito de soja. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-B-4@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261016T193000
+DTEND;TZID=Europe/Copenhagen:20261016T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=FR;UNTIL=20270131T225959Z
+SUMMARY:Cena libre: sobras o salir
+DESCRIPTION:Termina lo que quede en la nevera antes de la compra o sal a cenar.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-B-5@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261017T140000
+DTEND;TZID=Europe/Copenhagen:20261017T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SA;UNTIL=20270131T225959Z
+SUMMARY:Comida: pasta boloñesa (ternera picada)
+DESCRIPTION:Ternera picada con tomate triturado cebolla y ajo. Cocina el doble y congela una ración. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-B-5@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261017T193000
+DTEND;TZID=Europe/Copenhagen:20261017T203000
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SA;UNTIL=20270131T225959Z
+SUMMARY:Cena con calma: receta nueva o favorita
+DESCRIPTION:Día para cocinar sin prisa. Antes de acostarte saca del congelador la proteína del batch de mañana.
+END:VEVENT
+BEGIN:VEVENT
+UID:comida-B-6@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261018T140000
+DTEND;TZID=Europe/Copenhagen:20261018T144500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SU;UNTIL=20270131T225959Z
+SUMMARY:Comida: tortilla de patata + ensalada
+DESCRIPTION:Tortilla de patata con ensalada de tomate. Sobra para el lunes. Postre: plátano.
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-B-6@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261018T193000
+DTEND;TZID=Europe/Copenhagen:20261018T201500
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SU;UNTIL=20270131T225959Z
+SUMMARY:Cena ligera: huevos o sobras
+DESCRIPTION:Tras el batch cooking: algo ligero con huevos o sobras de la comida. Postre: yogur con fresas.
+END:VEVENT
+BEGIN:VEVENT
+UID:batch-B@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261011T170000
+DTEND;TZID=Europe/Copenhagen:20261011T183000
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SU;UNTIL=20270131T225959Z
+SUMMARY:Batch cooking para la semana B
+DESCRIPTION:Cocina: arroz para 3 raciones + pollo (tupper martes: arroz + pollo + brócoli). Pasta con atún y tomate (tupper miércoles). Garbanzos con espinacas y huevo cocido (tupper jueves). Etiqueta con la fecha. El lunes comes en la uni.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Cerrar el día
-TRIGGER:PT0S
+DESCRIPTION:Batch cooking para la semana B
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:batch-A@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261018T170000
+DTEND;TZID=Europe/Copenhagen:20261018T183000
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SU;UNTIL=20270131T225959Z
+SUMMARY:Batch cooking para la semana A
+DESCRIPTION:Cocina: arroz + salmón al horno + brócoli (tupper martes: consumir antes de 48 h). Arroz + pollo + verdura (tupper miércoles). Pollo + patata al horno + verdura (tupper jueves). Etiqueta con la fecha. El lunes comes en la uni.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Batch cooking para la semana A
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:compra-B@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261010T113000
+DTEND;TZID=Europe/Copenhagen:20261010T123000
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SA;UNTIL=20270131T225959Z
+SUMMARY:Compra para la semana B (Lidl / Netto)
+DESCRIPTION:Fijos: plátanos + fresas + yogur + zumo + huevos + brócoli + champiñones. Extras semana B: pollo (pechuga y muslos) + patatas + pasta + garbanzos de bote + espinacas + ternera picada + tomate triturado + cebolla + ajo + zanahoria + pimiento + salsa de soja + pan. Revisa antes nevera y congelador.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Compra para la semana B (Lidl / Netto)
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:compra-A@rutina-odense
+DTSTAMP:20261005T122500Z
+DTSTART;TZID=Europe/Copenhagen:20261017T113000
+DTEND;TZID=Europe/Copenhagen:20261017T123000
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=SA;UNTIL=20270131T225959Z
+SUMMARY:Compra para la semana A (Lidl / Netto)
+DESCRIPTION:Fijos: plátanos + fresas + yogur + zumo + huevos + brócoli + champiñones. Extras semana A: salmón + pollo + patatas + pasta + arroz + lentejas de bote + atún en lata + ternera picada + tomate triturado + lechuga y tomate para ensalada + zanahoria + pimiento. Revisa antes nevera y congelador.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Compra para la semana A (Lidl / Netto)
+TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 END:VCALENDAR
