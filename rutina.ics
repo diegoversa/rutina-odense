@@ -1,0 +1,181 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Diego//Rutina Odense//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Rutina Odense
+X-WR-TIMEZONE:Europe/Copenhagen
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+BEGIN:STANDARD
+DTSTART:19701025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cena-lun@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261005T193000
+DTEND;TZID=Europe/Copenhagen:20261005T201500
+RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20270131T225959Z
+SUMMARY:Cena: salmón + arroz + brócoli
+DESCRIPTION:Salmón en sartén u horno 15 min con arroz y brócoli (vapor o salteado). Descongela el salmón en la nevera desde la noche anterior (nunca a temperatura ambiente). Postre: yogur con fresas (o plátano).
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-mar@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261006T193000
+DTEND;TZID=Europe/Copenhagen:20261006T201500
+RRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL=20270131T225959Z
+SUMMARY:Cena rápida: pasta con chorizo + champiñones
+DESCRIPTION:Día largo (clase hasta las 18:00). Pasta con chorizo para calentar y saltea unos champiñones o brócoli aparte: 5 minutos. Postre: yogur con fresas (o plátano).
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-mie@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261007T193000
+DTEND;TZID=Europe/Copenhagen:20261007T201500
+RRULE:FREQ=WEEKLY;BYDAY=WE;UNTIL=20270131T225959Z
+SUMMARY:Cena: pollo con champiñones + puré
+DESCRIPTION:Pollo a la plancha (descongelado en la nevera) con champiñones salteados y puré. Postre: yogur con fresas (o plátano).
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-jue@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261008T193000
+DTEND;TZID=Europe/Copenhagen:20261008T201500
+RRULE:FREQ=WEEKLY;BYDAY=TH;UNTIL=20270131T225959Z
+SUMMARY:Cena 10 min: tortilla de champiñones + pan + pavo
+DESCRIPTION:Cena rápida. Tortilla de champiñones con pan y pavo en lonchas. Si falta algo para el fin de semana apúntalo en la lista de la compra. Postre: yogur con fresas (o plátano).
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-vie@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261009T193000
+DTEND;TZID=Europe/Copenhagen:20261009T201500
+RRULE:FREQ=WEEKLY;BYDAY=FR;UNTIL=20270131T225959Z
+SUMMARY:Cena libre: sobras o salir
+DESCRIPTION:Termina lo que quede en la nevera antes de la compra del sábado o sal a cenar. Postre: yogur con fresas (o plátano).
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-sab@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261010T193000
+DTEND;TZID=Europe/Copenhagen:20261010T203000
+RRULE:FREQ=WEEKLY;BYDAY=SA;UNTIL=20270131T225959Z
+SUMMARY:Cena con calma: receta nueva o favorita
+DESCRIPTION:Día para cocinar sin prisa. Antes de acostarte saca del congelador la proteína del batch de mañana y ponla en la nevera. Postre: yogur con fresas (o plátano).
+END:VEVENT
+BEGIN:VEVENT
+UID:cena-dom@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261011T193000
+DTEND;TZID=Europe/Copenhagen:20261011T201500
+RRULE:FREQ=WEEKLY;BYDAY=SU;UNTIL=20270131T225959Z
+SUMMARY:Cena: del batch cooking
+DESCRIPTION:Cena con lo que cocinaste esta tarde. Aparta ya los tuppers de martes a jueves. Postre: yogur con fresas (o plátano).
+END:VEVENT
+BEGIN:VEVENT
+UID:batch-dom@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261011T170000
+DTEND;TZID=Europe/Copenhagen:20261011T183000
+RRULE:FREQ=WEEKLY;BYDAY=SU;UNTIL=20270131T225959Z
+SUMMARY:Batch cooking: tuppers de martes a jueves
+DESCRIPTION:Cocina: 1) arroz para 3-4 raciones. 2) Proteína para 3 tuppers: salmón para el martes y pollo para miércoles y jueves (el pescado cocinado dura 2 días en nevera, el pollo 3-4). 3) Brócoli y champiñones salteados o al horno. El lunes comes en la universidad: no hace falta tupper. Etiqueta con la fecha.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Batch cooking en 30 min
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:plan-dom@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261011T203000
+DTEND;TZID=Europe/Copenhagen:20261011T204500
+RRULE:FREQ=WEEKLY;BYDAY=SU;UNTIL=20270131T225959Z
+SUMMARY:Revisión semanal (15 min)
+DESCRIPTION:1) Mira las clases de la semana. 2) Qué queda en nevera y congelador. 3) Qué falta para la compra del sábado. 4) Entregas o exámenes próximos.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Revisión semanal
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:compra-sab@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261010T113000
+DTEND;TZID=Europe/Copenhagen:20261010T123000
+RRULE:FREQ=WEEKLY;BYDAY=SA;UNTIL=20270131T225959Z
+SUMMARY:Compra (Lidl / Netto)
+DESCRIPTION:Mira antes nevera y congelador y haz la lista en el móvil. Fijos: plátanos + fresas + yogur + zumo + huevos + brócoli + champiñones. Lo que suele faltar: proteína (pollo/pescado/pavo) + legumbres + algo de variedad de verdura. Bilka solo para compra grande ocasional.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Compra en 30 min
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:limpieza-sab@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261010T100000
+DTEND;TZID=Europe/Copenhagen:20261010T104500
+RRULE:FREQ=WEEKLY;BYDAY=SA;UNTIL=20270131T225959Z
+SUMMARY:Limpieza semanal (45 min)
+DESCRIPTION:Baño (lavabo + ducha + wc). Suelo. Polvo en superficies. Cocina: encimera y fregadero (el resto ya lo friegas a diario). Pon cronómetro: a los 45 min se para.
+END:VEVENT
+BEGIN:VEVENT
+UID:reservar-colada-jue@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261008T183000
+DTEND;TZID=Europe/Copenhagen:20261008T184000
+RRULE:FREQ=WEEKLY;BYDAY=TH;UNTIL=20270131T225959Z
+SUMMARY:Reservar lavandería (viernes mañana)
+DESCRIPTION:Reserva la franja del viernes por la mañana. Si no hay hueco: sábado a primera hora o domingo por la mañana.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reservar lavandería
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:colada-vie@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261009T093000
+DTEND;TZID=Europe/Copenhagen:20261009T123000
+RRULE:FREQ=WEEKLY;BYDAY=FR;UNTIL=20270131T225959Z
+SUMMARY:Colada: lavar + secar + doblar
+DESCRIPTION:Ajusta la hora a tu franja reservada. Cada 2 semanas incluye sábanas y toallas. Si la secadora seca mal: sácala antes y termina en tendedero. Libera la máquina a tiempo.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Colada en 15 min
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dormir@rutina-odense
+DTSTAMP:20261005T111700Z
+DTSTART;TZID=Europe/Copenhagen:20261005T231500
+DTEND;TZID=Europe/Copenhagen:20261005T234500
+RRULE:FREQ=DAILY;UNTIL=20270131T225959Z
+SUMMARY:Cerrar el día
+DESCRIPTION:Pantallas fuera y a la cama. Durmiendo a las 00:00 y despertando a las 06:30 son 6,5 h: en las noches previas a una clase de las 08:00 (domingo, lunes, miércoles) intenta acostarte a las 23:00.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cerrar el día
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+END:VCALENDAR
